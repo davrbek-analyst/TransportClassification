@@ -5,7 +5,8 @@ import platform
 import plotly.express as px
 
 plt = platform.system()
-if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
+if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
+    
 #Title
 st.title('Transport classifying model')
 
